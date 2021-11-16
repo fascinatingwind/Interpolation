@@ -13,7 +13,16 @@ namespace InterpolationExample
         public void ExportFile()
         {
             var entities = new TestDataBaseEntities();
-            var data = entities.GammaRay;
+            var points = entities.GammaRay.ToList();
+            var array = points
+                .Skip(1)
+                .Zip(points, (second, first) => new[] 
+                { 
+                    first, second 
+                }).ToArray();
+
+            var writer = new CsvWriter<GammaRay>();
+            writer.Write(points, "test.csv");
         }
     }
 }

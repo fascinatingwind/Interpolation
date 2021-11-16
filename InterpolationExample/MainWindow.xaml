@@ -1,0 +1,14 @@
+<Window x:Class="InterpolationExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterpolationExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Select CSV file" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="210" Height="50" Click="SelectButtonClick"/>
+        <Button Content="Save to file" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="210" Height="50" Click="SaveButtonClick"/>
+
+    </Grid>
+</Window>

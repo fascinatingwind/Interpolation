@@ -67,8 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="InterpolatioMethod.cs" />
-    <Compile Include="ViewModel.cs" />
+    <Compile Include="Math\InterpolationMethod.cs" />
+    <Compile Include="Math\Point.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

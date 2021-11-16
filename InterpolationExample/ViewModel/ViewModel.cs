@@ -14,10 +14,6 @@ namespace InterpolationExample
         {
             var entities = new TestDataBaseEntities();
             var data = entities.GammaRay;
-            foreach(var item in data)
-            {
-                var depth = item.MD;
-            }
         }
     }
 }

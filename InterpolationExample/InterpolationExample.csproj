@@ -67,7 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CsvWriter.cs" />
+    <Compile Include="Utility\CsvWriter.cs" />
+    <Compile Include="Math\DoubleCompare.cs" />
+    <Compile Include="Math\GammaRayInterpolate.cs" />
     <Compile Include="Math\InterpolationMethod.cs" />
     <Compile Include="Math\Point.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />

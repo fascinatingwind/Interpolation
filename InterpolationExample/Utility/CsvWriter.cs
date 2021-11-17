@@ -9,7 +9,7 @@ namespace InterpolationExample
 {
     class CsvWriter<T>
     {
-        public void Write(IList<T> list, string file)
+        public void Write(IEnumerable<T> list, string file)
         {
             var typeInfo = typeof(T);
             var properties = typeInfo.GetProperties();

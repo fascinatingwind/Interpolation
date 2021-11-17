@@ -19,14 +19,16 @@ namespace InterpolationExample
                 {
                     first, second
                 }).ToList();
-            
-            var grInterpolate = new ObjectPropertyInterpolation<GammaRay>(new GammaRayPropertyInterpolation());
+
+            var interpolateInterface = new GammaRayPropertyInterpolation();
+            var grInterpolate = new ObjectPropertyInterpolation<GammaRay>(interpolateInterface);
             var resultList = new List<GammaRay>();
             foreach (var point in points)
             {
                 resultList.AddRange(grInterpolate.Interpolate(point.First(), point.Last(), 0.1));
             }
-            var writer = new CsvWriter<GammaRay>();
+
+            var writer = new CsvWriter<GammaRay>(interpolateInterface);
             writer.Write(resultList, File);
         }
     }
